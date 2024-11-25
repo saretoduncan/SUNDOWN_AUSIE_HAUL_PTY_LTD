@@ -5,7 +5,7 @@ export const navigationData: Map<string, TNavData> = new Map();
 navigationData.set(ENavDataTitles.HOME_PAGE, { linkName: "Home", to: "/" });
 navigationData.set(ENavDataTitles.ABOUT_PAGE, {
   linkName: "About us",
-  to: "/about",
+  to: "/aboutus",
 });
 navigationData.set(ENavDataTitles.SERVICES_PAGE, {
   linkName: "Services",
@@ -13,5 +13,5 @@ navigationData.set(ENavDataTitles.SERVICES_PAGE, {
 });
 navigationData.set(ENavDataTitles.CONTACTS_PAGE, {
   linkName: "Contact us",
-  to: "contacts",
+  to: "/contactus",
 });

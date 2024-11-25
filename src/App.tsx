@@ -5,10 +5,12 @@ function App() {
   return (
     <>
       <div className="min-h-screen grid">
-        <header>
-          <NavigationBar />
-        </header>
-        <main>this main</main>
+        <div>
+          <header className="fixed w-full bg-[#11111130]">
+            <NavigationBar />
+          </header>
+          {/* <main className="">this main</main> */}
+        </div>
 
         <footer className="self-end h-[100px]">
           <Footer />
