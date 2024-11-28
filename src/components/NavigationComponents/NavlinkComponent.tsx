@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router";
 import { useLocation } from "react-router";
 import { NavBarContext } from "../../context";
+import { scrollUp } from "../../utils/NavigationData";
 type TNavLinkProps = {
   linkName: string;
   linkUrl: string;
@@ -23,7 +24,10 @@ const NavlinkComponent: React.FC<TNavLinkProps> = ({
           (isActive ? "text-orange-500" : "") +
           ` font-bold px-2 rounded transition-all ease-in-out duration-500  ${classes}`
         }
-        onClick={() => openNav?.isSideNavopen && openNav?.setSideNavOpen(false)}
+        onClick={() => {
+          openNav?.isSideNavopen && openNav?.setSideNavOpen(false);
+          scrollUp();
+        }}
       >
         <div>{linkName}</div>
 
