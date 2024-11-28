@@ -2,10 +2,10 @@ import { ENavDataTitles } from "../../types/types";
 import { navigationData } from "../../utils/NavigationData";
 import NavlinkComponent from "./NavlinkComponent";
 
-const SideNav = () => {
+const SideNav:React.FC = () => {
   return (
     <>
-      <div className="grid ">
+      <div className="grid space-y-2 ">
         <NavlinkComponent
           linkName={navigationData.get(ENavDataTitles.HOME_PAGE)!!.linkName}
           linkUrl={navigationData.get(ENavDataTitles.HOME_PAGE)!!.to}

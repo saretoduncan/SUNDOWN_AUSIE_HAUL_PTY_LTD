@@ -1,5 +1,7 @@
+import { useContext } from "react";
 import { NavLink } from "react-router";
 import { useLocation } from "react-router";
+import { NavBarContext } from "../../context";
 type TNavLinkProps = {
   linkName: string;
   linkUrl: string;
@@ -11,6 +13,8 @@ const NavlinkComponent: React.FC<TNavLinkProps> = ({
   classes,
 }) => {
   const currentPath = useLocation().pathname;
+  const openNav = useContext(NavBarContext);
+
   return (
     <>
       <NavLink
@@ -19,6 +23,7 @@ const NavlinkComponent: React.FC<TNavLinkProps> = ({
           (isActive ? "text-orange-500" : "text-gray-800") +
           ` font-bold px-2 rounded transition-all ease-in-out duration-500  ${classes}`
         }
+        onClick={() => openNav?.isSideNavopen && openNav?.setSideNavOpen(false)}
       >
         <div>{linkName}</div>
 
