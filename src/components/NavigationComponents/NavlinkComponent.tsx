@@ -20,7 +20,7 @@ const NavlinkComponent: React.FC<TNavLinkProps> = ({
       <NavLink
         to={linkUrl}
         className={({ isActive }) =>
-          (isActive ? "text-orange-500" : "text-gray-800") +
+          (isActive ? "text-orange-500" : "lg:text-gray-100 lg:text-shadow lg:shadow-black") +
           ` font-bold px-2 rounded transition-all ease-in-out duration-500  ${classes}`
         }
         onClick={() => openNav?.isSideNavopen && openNav?.setSideNavOpen(false)}
