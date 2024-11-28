@@ -1,5 +1,6 @@
 import { ENavDataTitles } from "../../types/types";
 import { navigationData } from "../../utils/NavigationData";
+import CallLinkComponent from "./CallLinkComponent";
 import NavlinkComponent from "./NavlinkComponent";
 
 const SideNav:React.FC = () => {
@@ -26,6 +27,7 @@ const SideNav:React.FC = () => {
           linkUrl={navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.to}
           classes=""
         />{" "}
+        <CallLinkComponent/>
       </div>
     </>
   );

@@ -15,3 +15,5 @@ navigationData.set(ENavDataTitles.CONTACTS_PAGE, {
   linkName: "Contact us",
   to: "/contactus",
 });
+
+export const PHONENUMBER = "+61 468 869 168";

@@ -5,7 +5,7 @@ import NavbarContextWrapper from "./context/NavbarContextWrapper";
 function App() {
   return (
     <>
-      <div className="min-h-screen grid">
+      <div className="min-h-screen grid text-gray-700">
         <div>
           <header className="relative">
             <NavbarContextWrapper>
