@@ -1,6 +1,8 @@
+import useChangeOfYAxisHook from "../../customHooks/useChangeOfYAxisHook";
 import { PHONENUMBER } from "../../utils/NavigationData";
 import { FiPhoneCall } from "react-icons/fi";
 const CallLinkComponent = () => {
+  const {isYAxisChange} = useChangeOfYAxisHook();
   return (
     <>
       <a
@@ -13,7 +15,7 @@ const CallLinkComponent = () => {
           </div>
         </div>
 
-        <p className="font-bold text-shadow shadow-gray-700">{PHONENUMBER}</p>
+        <p className={`${isYAxisChange?"lg:text-shadow-none lg:text-gray-950":""} font-bold text-shadow shadow-gray-700 transition-all ease-in-out duration-700`}>{PHONENUMBER}</p>
       </a>
     </>
   );
