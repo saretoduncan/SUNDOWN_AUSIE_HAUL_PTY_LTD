@@ -1,3 +1,4 @@
+import AnimateToTop from "../../AnimationWrappers/AnimateToTop";
 import truck_one from "../../assets/Truck_one.webp";
 import PrimaryLinkButton from "../../components/Buttons/PrimaryLinkButton";
 import SecondaryLinkButton from "../../components/Buttons/SecondaryLinkButton";
@@ -11,6 +12,7 @@ const HeroSection = () => {
       >
         <div className="absolute top-0 bottom-0 w-full bg-black bg-opacity-60 text-gray-100 flex flex-col justify-center px-4 font-bold">
           <div className="xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
+            <AnimateToTop>
             <div className="space-y-2 mt-24 md:max-w-md lg:max-w-lg">
               <section className="space-y-1">
                 <h1 className="text-shadow shadow-gray-950 text-2xl lg:text-3xl ">
@@ -24,6 +26,7 @@ const HeroSection = () => {
                 </p>
               </section>
               <section className="flex space-x-2">
+                
                 <PrimaryLinkButton
                   linkName="Learn More"
                   url={ENavDataTitles.ABOUT_PAGE}
@@ -34,6 +37,7 @@ const HeroSection = () => {
                 />
               </section>
             </div>
+            </AnimateToTop>
           </div>
         </div>
       </div>

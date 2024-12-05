@@ -8,7 +8,7 @@ function App() {
   const { isYAxisChange } = useChangeOfYAxisHook();
   return (
     <>
-      <div className="min-h-[2000px] grid text-gray-700 relative bg-slate-100">
+      <div className="min-h-screen grid text-gray-700 relative bg-slate-100">
         <div>
           <header className=" fixed  w-full z-50 ">
             <NavbarContextWrapper>

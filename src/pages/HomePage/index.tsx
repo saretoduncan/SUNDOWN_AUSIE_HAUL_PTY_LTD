@@ -1,11 +1,17 @@
 import HeroSection from "./HeroSection";
+import WhyChooseUs from "./WhyChooseUs";
 
 const HomePage = () => {
   return (
     <>
-      <section>
-        <HeroSection />
-      </section>
+      <div className="grid gap-6">
+        <section>
+          <HeroSection />
+        </section>
+        <section>
+          <WhyChooseUs />
+        </section>
+      </div>
     </>
   );
 };

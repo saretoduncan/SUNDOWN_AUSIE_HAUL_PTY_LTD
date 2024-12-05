@@ -8,3 +8,7 @@ export const ENavDataTitles = {
   ABOUT_PAGE: "aboutPage",
   CONTACTS_PAGE: "contactPage",
 };
+
+export type TWrapperType = {
+  children: React.ReactNode;
+};
