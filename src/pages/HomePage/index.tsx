@@ -1,4 +1,5 @@
 import HeroSection from "./HeroSection";
+import ServicesPreviewSection from "./ServicesPreviewSection";
 import WhyChooseUs from "./WhyChooseUs";
 
 const HomePage = () => {
@@ -10,6 +11,9 @@ const HomePage = () => {
         </section>
         <section>
           <WhyChooseUs />
+        </section>
+        <section>
+          <ServicesPreviewSection/>
         </section>
       </div>
     </>
