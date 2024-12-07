@@ -19,7 +19,7 @@ const HeroSection = () => {
                   <span className="text-orange-500">Sundown Aussie Haul</span>{" "}
                   Reliable Haulage Services Across Western Australia
                 </h1>
-                <p className="text-sm text-white font-normal text-shadow-lg shadow-gray-950 ">
+                <p className="text-sm text-white font-normal text-shadow-lg shadow-gray-950  lg:text-base">
                   Offering reliable and efficient transportation solutions
                   across Western Australia, ensuring safe and timely delivery
                   for all haulage needs.

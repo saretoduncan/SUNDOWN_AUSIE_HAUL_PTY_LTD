@@ -15,7 +15,7 @@ function WhyChooseUs() {
         <section className="">
           <AnimateToTop>
             <div className="grid gap-2 ">
-              <h3 className="font-bold text-2xl">
+              <h3 className="font-bold text-2xl lg:text-4xl">
                 Discover Our seamless Logistics solutions
               </h3>
               <p className="text-sm">
@@ -32,7 +32,7 @@ function WhyChooseUs() {
             </div>
           </AnimateToTop>{" "}
         </section>
-        <section className=" grid gap-2 ">
+        <section className=" grid gap-6 ">
           <section className="overflow-x-hidden">
             <AnimateToLeft>
               <div className="">
@@ -60,7 +60,7 @@ function WhyChooseUs() {
             </AnimateToLeft>
           </section>
         </section>
-        <section className=" grid gap-2 ">
+        <section className=" grid gap-6 ">
           <section className="overflow-x-hidden">
             <AnimateToRight>
               <div className="overflow-hidden">

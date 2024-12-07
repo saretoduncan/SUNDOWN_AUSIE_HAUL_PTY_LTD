@@ -6,7 +6,7 @@ import WhyChooseUs from "./WhyChooseUs";
 const HomePage = () => {
   return (
     <>
-      <div className="grid gap-6">
+      <div className="grid gap-8 lg:gap-12 ">
         <section>
           <HeroSection />
         </section>
