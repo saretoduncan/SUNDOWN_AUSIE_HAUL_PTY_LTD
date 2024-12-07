@@ -1,6 +1,7 @@
 export type TNavLinkTypes = {
   linkName: string;
   url: string;
+  customClass?:string
 };
 export const ENavDataTitles = {
   HOME_PAGE: "homePage",

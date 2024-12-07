@@ -1,3 +1,4 @@
+import CallToActionComponent from "../../components/CallToActionComponent";
 import HeroSection from "./HeroSection";
 import ServicesPreviewSection from "./ServicesPreviewSection";
 import WhyChooseUs from "./WhyChooseUs";
@@ -13,7 +14,10 @@ const HomePage = () => {
           <WhyChooseUs />
         </section>
         <section>
-          <ServicesPreviewSection/>
+          <ServicesPreviewSection />
+        </section>
+        <section>
+          <CallToActionComponent />
         </section>
       </div>
     </>
