@@ -11,7 +11,8 @@ import AnimateToRight from "../../AnimationWrappers/AnimateToRight";
 function WhyChooseUs() {
   return (
     <>
-      <div className="p-4 grid gap-4 md:grid-cols-3  xl:w-[1024px] xl:mx-auto 2xl:w-[1280px]">
+      <div className="p-4 grid gap-4 md:grid-cols-3  xl:w-[1024px] xl:mx-auto 2xl:w-[1280px] bg-cover bg-no-repeat bg-center">
+      
         <section className="">
           <AnimateToTop>
             <div className="grid gap-2 ">

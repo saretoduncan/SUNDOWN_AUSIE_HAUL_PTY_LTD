@@ -29,7 +29,7 @@ const ServicesPreviewSection = () => {
             </AnimateToTop>
           </section>
           <section className="grid gap-2 md:grid-cols-2">
-            <section>
+            <section className="overflow-hidden">
               <AnimateToRight>
                 <ServicePreviewCardComponent
                   backgroundImage={truck_two}
@@ -39,7 +39,7 @@ const ServicesPreviewSection = () => {
               </AnimateToRight>
             </section>
 
-            <section>
+            <section className="overflow-x-hidden">
               <AnimateToLeft>
                 <ServicePreviewCardComponent
                   backgroundImage={one_trailer_truck}
@@ -48,7 +48,7 @@ const ServicesPreviewSection = () => {
                 />
               </AnimateToLeft>
             </section>
-            <section>
+            <section className="overflow-x-hidden">
               <AnimateToRight>
                 <ServicePreviewCardComponent
                   backgroundImage={truck_rear}
@@ -57,7 +57,7 @@ const ServicesPreviewSection = () => {
                 />
               </AnimateToRight>
             </section>
-            <section>
+            <section className="overflow-x-hidden">
               <AnimateToLeft>
                 <ServicePreviewCardComponent
                   backgroundImage={truck_two}
