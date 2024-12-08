@@ -1,4 +1,5 @@
 import CallToActionComponent from "../../components/CallToActionComponent";
+import FaqsSection from "./FaqsSection";
 import HeroSection from "./HeroSection";
 import ServicesPreviewSection from "./ServicesPreviewSection";
 import WhyChooseUs from "./WhyChooseUs";
@@ -6,7 +7,7 @@ import WhyChooseUs from "./WhyChooseUs";
 const HomePage = () => {
   return (
     <>
-      <div className="grid gap-6">
+      <div className="grid gap-8 lg:gap-12 ">
         <section>
           <HeroSection />
         </section>
@@ -18,6 +19,9 @@ const HomePage = () => {
         </section>
         <section>
           <CallToActionComponent />
+        </section>
+        <section>
+          <FaqsSection />
         </section>
       </div>
     </>

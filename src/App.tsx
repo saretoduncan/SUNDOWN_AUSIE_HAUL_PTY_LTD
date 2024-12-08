@@ -8,13 +8,13 @@ function App() {
   const { isYAxisChange } = useChangeOfYAxisHook();
   return (
     <>
-      <div className="min-h-screen grid text-gray-700 relative bg-slate-100">
-        <div>
+      <div className="min-h-screen flex flex-col justify-between text-gray-700 relative bg-slate-50 ">
+        <div className="relative">
           <header className=" fixed  w-full z-50 ">
             <NavbarContextWrapper>
               <div
                 className={`w-full  translate-all ease-in-out duration-700 ${
-                  isYAxisChange ? "bg-slate-100 shadow " : "bg-transparent"
+                  isYAxisChange ? "bg-orange-50 shadow " : "bg-transparent"
                 } `}
               >
                 <div className="mx-auto xl:w-[1040px] 2xl:w-[1280px]">
@@ -28,7 +28,7 @@ function App() {
           </main>
         </div>
 
-        <footer className="self-end h-[100px]">
+        <footer className="justify-self-end mt-6">
           <Footer />
         </footer>
       </div>

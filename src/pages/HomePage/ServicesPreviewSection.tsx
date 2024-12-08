@@ -9,15 +9,15 @@ const ServicesPreviewSection = () => {
   return (
     <>
       <div className="p-4 bg-orange-50  ">
-        <div className="grid gap-2 xl:w-[1040px] 2xl:w-[1280px] xl:mx-auto">
+        <div className="grid gap-6 xl:w-[1040px] 2xl:w-[1280px] xl:mx-auto">
           <section className="overflow-hidden">
             <AnimateToTop>
               <div className="grid gap-2">
-                <h4 className="text-xl font-bold text-center">
+                <h4 className="text-xl font-bold text-center lg:text-4xl text-orange-500">
                   Providing Dependable <br /> Transport and Logistics <br />
                   Services
                 </h4>
-                <p className="text-sm text-center">
+                <p className="text-sm text-center md:text-base">
                   <span className="font-bold text-orange-500">
                     Sundown Aussie Haul{" "}
                   </span>
@@ -29,7 +29,7 @@ const ServicesPreviewSection = () => {
             </AnimateToTop>
           </section>
           <section className="grid gap-2 md:grid-cols-2">
-            <section>
+            <section className="overflow-hidden">
               <AnimateToRight>
                 <ServicePreviewCardComponent
                   backgroundImage={truck_two}
@@ -39,7 +39,7 @@ const ServicesPreviewSection = () => {
               </AnimateToRight>
             </section>
 
-            <section>
+            <section className="overflow-x-hidden">
               <AnimateToLeft>
                 <ServicePreviewCardComponent
                   backgroundImage={one_trailer_truck}
@@ -48,7 +48,7 @@ const ServicesPreviewSection = () => {
                 />
               </AnimateToLeft>
             </section>
-            <section>
+            <section className="overflow-x-hidden">
               <AnimateToRight>
                 <ServicePreviewCardComponent
                   backgroundImage={truck_rear}
@@ -57,7 +57,7 @@ const ServicesPreviewSection = () => {
                 />
               </AnimateToRight>
             </section>
-            <section>
+            <section className="overflow-x-hidden">
               <AnimateToLeft>
                 <ServicePreviewCardComponent
                   backgroundImage={truck_two}

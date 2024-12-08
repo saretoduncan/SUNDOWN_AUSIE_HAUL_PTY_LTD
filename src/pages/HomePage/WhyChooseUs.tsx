@@ -11,11 +11,12 @@ import AnimateToRight from "../../AnimationWrappers/AnimateToRight";
 function WhyChooseUs() {
   return (
     <>
-      <div className="p-4 grid gap-4 md:grid-cols-3  xl:w-[1024px] xl:mx-auto 2xl:w-[1280px]">
+      <div className="p-4 grid gap-4 md:grid-cols-3  xl:w-[1024px] xl:mx-auto 2xl:w-[1280px] bg-cover bg-no-repeat bg-center">
+      
         <section className="">
           <AnimateToTop>
             <div className="grid gap-2 ">
-              <h3 className="font-bold text-2xl">
+              <h3 className="font-bold text-2xl lg:text-4xl">
                 Discover Our seamless Logistics solutions
               </h3>
               <p className="text-sm">
@@ -32,7 +33,7 @@ function WhyChooseUs() {
             </div>
           </AnimateToTop>{" "}
         </section>
-        <section className=" grid gap-2 ">
+        <section className=" grid gap-6 ">
           <section className="overflow-x-hidden">
             <AnimateToLeft>
               <div className="">
@@ -60,7 +61,7 @@ function WhyChooseUs() {
             </AnimateToLeft>
           </section>
         </section>
-        <section className=" grid gap-2 ">
+        <section className=" grid gap-6 ">
           <section className="overflow-x-hidden">
             <AnimateToRight>
               <div className="overflow-hidden">

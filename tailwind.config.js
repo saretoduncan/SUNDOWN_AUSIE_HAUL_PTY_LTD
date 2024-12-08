@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
       },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",

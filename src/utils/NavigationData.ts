@@ -16,7 +16,7 @@ navigationData.set(ENavDataTitles.CONTACTS_PAGE, {
   url: "/contactus",
 });
 
-export const PHONENUMBER = "+61 468 869 168";
+
 
 export const scrollUp = () =>
   window.scrollTo({
