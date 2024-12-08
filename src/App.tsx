@@ -8,8 +8,8 @@ function App() {
   const { isYAxisChange } = useChangeOfYAxisHook();
   return (
     <>
-      <div className="min-h-screen grid text-gray-700 relative bg-slate-50 ">
-        <div>
+      <div className="min-h-screen flex flex-col justify-between text-gray-700 relative bg-slate-50 ">
+        <div className="relative">
           <header className=" fixed  w-full z-50 ">
             <NavbarContextWrapper>
               <div
@@ -28,7 +28,7 @@ function App() {
           </main>
         </div>
 
-        <footer className="self-end h-[100px]">
+        <footer className="justify-self-end mt-6">
           <Footer />
         </footer>
       </div>

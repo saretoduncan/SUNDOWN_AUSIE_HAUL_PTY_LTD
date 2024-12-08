@@ -29,7 +29,7 @@ const NavlinkComponent: React.FC<TNavLinkProps> = ({
           scrollUp();
         }}
       >
-        <div>{linkName}</div>
+        <p>{linkName}</p>
 
         <div
           className={` h-[2px] bg-orange-500 ${

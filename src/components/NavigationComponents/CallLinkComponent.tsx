@@ -1,6 +1,7 @@
 import useChangeOfYAxisHook from "../../customHooks/useChangeOfYAxisHook";
-import { PHONENUMBER } from "../../utils/NavigationData";
+
 import { FiPhoneCall } from "react-icons/fi";
+import { PHONENUMBER } from "../../utils/Constants";
 const CallLinkComponent = () => {
   const {isYAxisChange} = useChangeOfYAxisHook();
   return (
