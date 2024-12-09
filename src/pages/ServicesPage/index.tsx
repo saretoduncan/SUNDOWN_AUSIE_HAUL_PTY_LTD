@@ -1,5 +1,15 @@
+import HeroSection from "./HeroSection";
+
 const ServicesPage = () => {
-  return <div>ServicesPage</div>;
+  return (
+    <>
+      <div>
+        <section>
+          <HeroSection />
+        </section>
+      </div>
+    </>
+  );
 };
 
 export default ServicesPage;
