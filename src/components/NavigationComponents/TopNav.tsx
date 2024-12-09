@@ -76,7 +76,7 @@ const TopNav: React.FC = () => {
         <section className="self-center lg:hidden">
           <FaBars
             className={`text-3xl transition-all duration-700 ease-in-out ${
-              openNav?.isSideNavopen || isYAxisChange ? "text-gray-950" : "text-slate-100"
+              openNav?.isSideNavopen || isYAxisChange || currentPath===navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url ? "text-gray-950" : "text-slate-100"
             } `}
             onClick={() => openNav?.setSideNavOpen(!openNav?.isSideNavopen)}
           />

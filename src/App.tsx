@@ -1,10 +1,14 @@
+import { useLocation } from "react-router";
 import MainRoutes from "./MainRoutes";
 import Footer from "./components/Footer";
 import NavigationBar from "./components/NavigationComponents/NavigationBar";
 import NavbarContextWrapper from "./context/NavbarContextWrapper";
 import useChangeOfYAxisHook from "./customHooks/useChangeOfYAxisHook";
+import { ENavDataTitles } from "./types/types";
+import { navigationData } from "./utils/NavigationData";
 
 function App() {
+  const currentPath = useLocation().pathname;
   const { isYAxisChange } = useChangeOfYAxisHook();
   return (
     <>
@@ -14,7 +18,7 @@ function App() {
             <NavbarContextWrapper>
               <div
                 className={`w-full  translate-all ease-in-out duration-700 ${
-                  isYAxisChange ? "bg-orange-50 shadow " : "bg-transparent"
+                  isYAxisChange||navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url===currentPath ? "bg-orange-50 shadow " : "bg-transparent"
                 } `}
               >
                 <div className="mx-auto xl:w-[1040px] 2xl:w-[1280px]">
