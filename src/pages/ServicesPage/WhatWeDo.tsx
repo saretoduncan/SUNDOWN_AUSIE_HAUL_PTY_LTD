@@ -11,8 +11,8 @@ const WhatWeDo = () => {
   return (
     <>
       <div className="px-4">
-        <div className="grid gap-6 xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
-          <section className="overflow-hidden">
+        <div className="grid gap-12 xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
+          <section className="">
             <AnimateToTop>
               <div>
                 <h5 className="text-orange-500 font-bold text-xl text-center uppercase ">
@@ -27,7 +27,7 @@ const WhatWeDo = () => {
               </div>
             </AnimateToTop>
           </section>
-          <section className="grid gap-12">
+          <section className="grid gap-20 md:gap-12">
             <div className="grid gap-6 md:grid-cols-2 ">
               <section className="overflow-x-hidden self-center">
                 <AnimateToRight>
