@@ -1,3 +1,4 @@
+import CallToActionComponent from "../../components/CallToActionComponent";
 import HeroSection from "./HeroSection";
 import WhoAreWe from "./WhoAreWe";
 import WhyUs from "./WhyUs";
@@ -13,7 +14,10 @@ const AboutPage = () => {
           <WhoAreWe />
         </section>
         <section>
-          <WhyUs/>
+          <WhyUs />
+        </section>
+        <section>
+          <CallToActionComponent />
         </section>
       </div>
     </>
