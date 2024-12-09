@@ -7,7 +7,7 @@ const WhoAreWe = () => {
     <>
       <div className="px-4 ">
         <div className="grid md:grid-cols-2  gap-4 xl:w-[1040px] 2xl:w-[1280px] xl:mx-auto">
-          <section className="order-2 md:order-1">
+          <section className="order-2 md:order-1 overflow-x-hidden">
             <AnimateToRight>
               <div className="relative lg:pe-10 ">
                 <div className="absolute left-0 top-10  lg:top-6 lg:left-2 xl:left-0">
@@ -26,7 +26,7 @@ const WhoAreWe = () => {
               </div>
             </AnimateToRight>{" "}
           </section>
-          <section className="md:self-center overflow-hidden order-1 md:order-2">
+          <section className="md:self-center overflow-hidden order-1 md:order-2 ">
             <AnimateToLeft>
               <div className="mt-16 space-y-2  ">
                 <div>
