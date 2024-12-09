@@ -9,7 +9,7 @@ const HeroSection = () => {
         style={{ backgroundImage: "url(" + "'" + truck_rear + "'" + ")" }}
       >
         <div className="absolute top-0 bottom-0 w-full bg-gradient-to-r from-[#111111] to-[#f9731660]  text-gray-100 flex flex-col justify-center px-4 font-bold">
-          <div className="xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
+          <div className="xl:w-[1040px] xl:mx-auto 2xl:w-[1280px] overflow-hidden">
             <AnimateToTop>
               <div className="space-y-2 mt-24 md:max-w-md lg:max-w-lg">
                 <section className="space-y-1">
