@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import WhoAreWe from "./WhoAreWe";
+import WhyUs from "./WhyUs";
 
 const AboutPage = () => {
   return (
@@ -10,6 +11,9 @@ const AboutPage = () => {
         </section>
         <section>
           <WhoAreWe />
+        </section>
+        <section>
+          <WhyUs/>
         </section>
       </div>
     </>
