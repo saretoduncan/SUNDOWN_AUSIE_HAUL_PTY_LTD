@@ -12,7 +12,7 @@ const WhyUs = () => {
         <div className="grid gap-6  xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
           <div>
             <section className="grid gap-6 md:grid-cols-2">
-              <section>
+              <section className="overflow-x-hidden">
                 <AnimateToRight>
                   <div>
                     <div>
@@ -40,7 +40,7 @@ const WhyUs = () => {
                   </div>
                 </AnimateToRight>
               </section>
-              <section>
+              <section className="overflow-x-hidden">
                 <AnimateToLeft>
                   <div>
                     <div>
@@ -69,7 +69,7 @@ const WhyUs = () => {
           </div>
 
           <div className="">
-            <section>
+            <section className="overflow-x-hidden">
               <div className="flex space-x-2 md:w-1/4">
                 <h5 className="text-orange-500 font-bold text-xl capitalize ">
                   Our core values
@@ -90,7 +90,7 @@ const WhyUs = () => {
                     </div>
                   </AnimateToRight>
                 </div>
-                <div>
+                <div className="overflow-x-hidden">
                   <AnimateToLeft>
                     <div>
                       <WhyUsCardComponent
@@ -101,7 +101,7 @@ const WhyUs = () => {
                     </div>
                   </AnimateToLeft>
                 </div>
-                <div>
+                <div className="outflow-x-hidden">
                   <AnimateToRight>
                     <div>
                       <WhyUsCardComponent
@@ -112,7 +112,7 @@ const WhyUs = () => {
                     </div>
                   </AnimateToRight>
                 </div>
-                <div>
+                <div className="overflow-x-hidden">
                   <AnimateToLeft>
                     <div>
                       <WhyUsCardComponent
