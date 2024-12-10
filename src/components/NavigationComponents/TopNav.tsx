@@ -21,7 +21,11 @@ const TopNav: React.FC = () => {
           <img
             src={logo}
             alt="sundown haul logo"
-            className={`${isYAxisChange?"w-[100px] lg:w-[120px]":"w-[120px] lg:w-[150px]"} transition-all ease-in-out duration-700`}
+            className={`${
+              isYAxisChange
+                ? "w-[100px] lg:w-[120px]"
+                : "w-[120px] lg:w-[150px]"
+            } transition-all ease-in-out duration-700`}
           />
         </section>{" "}
         <section className="hidden lg:flex">
@@ -29,7 +33,7 @@ const TopNav: React.FC = () => {
             linkName={navigationData.get(ENavDataTitles.HOME_PAGE)!!.linkName}
             linkUrl={navigationData.get(ENavDataTitles.HOME_PAGE)!!.url}
             classes={
-              isYAxisChange ||
+              ( isYAxisChange || currentPath===navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url) ||
               currentPath === navigationData.get(ENavDataTitles.HOME_PAGE)!!.url
                 ? ""
                 : "lg:text-gray-100 lg:text-shadow lg:shadow-black"
@@ -39,8 +43,9 @@ const TopNav: React.FC = () => {
             linkName={navigationData.get(ENavDataTitles.ABOUT_PAGE)!!.linkName}
             linkUrl={navigationData.get(ENavDataTitles.ABOUT_PAGE)!!.url}
             classes={
-              isYAxisChange ||
-              currentPath === navigationData.get(ENavDataTitles.ABOUT_PAGE)!!.url
+              ( isYAxisChange || currentPath===navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url) ||
+              currentPath ===
+                navigationData.get(ENavDataTitles.ABOUT_PAGE)!!.url
                 ? ""
                 : "lg:text-gray-100 lg:text-shadow lg:shadow-black"
             }
@@ -51,8 +56,9 @@ const TopNav: React.FC = () => {
             }
             linkUrl={navigationData.get(ENavDataTitles.SERVICES_PAGE)!!.url}
             classes={
-              isYAxisChange ||
-              currentPath === navigationData.get(ENavDataTitles.SERVICES_PAGE)!!.url
+              ( isYAxisChange || currentPath===navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url) ||
+              currentPath ===
+                navigationData.get(ENavDataTitles.SERVICES_PAGE)!!.url
                 ? ""
                 : "lg:text-gray-100 lg:text-shadow lg:shadow-black"
             }
@@ -63,8 +69,9 @@ const TopNav: React.FC = () => {
             }
             linkUrl={navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url}
             classes={
-              isYAxisChange ||
-              currentPath === navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url
+             ( isYAxisChange || currentPath===navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url) ||
+              currentPath ===
+                navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url
                 ? ""
                 : "lg:text-gray-100 lg:text-shadow lg:shadow-black"
             }
@@ -76,7 +83,12 @@ const TopNav: React.FC = () => {
         <section className="self-center lg:hidden">
           <FaBars
             className={`text-3xl transition-all duration-700 ease-in-out ${
-              openNav?.isSideNavopen || isYAxisChange ? "text-gray-950" : "text-slate-100"
+              openNav?.isSideNavopen ||
+              isYAxisChange ||
+              currentPath ===
+                navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url
+                ? "text-gray-950"
+                : "text-slate-100"
             } `}
             onClick={() => openNav?.setSideNavOpen(!openNav?.isSideNavopen)}
           />

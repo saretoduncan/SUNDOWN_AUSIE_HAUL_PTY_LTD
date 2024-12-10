@@ -2,8 +2,12 @@ import useChangeOfYAxisHook from "../../customHooks/useChangeOfYAxisHook";
 
 import { FiPhoneCall } from "react-icons/fi";
 import { PHONENUMBER } from "../../utils/Constants";
+import { useLocation } from "react-router";
+import { navigationData } from "../../utils/NavigationData";
+import { ENavDataTitles } from "../../types/types";
 const CallLinkComponent = () => {
-  const {isYAxisChange} = useChangeOfYAxisHook();
+  const currentPath = useLocation().pathname;
+  const { isYAxisChange } = useChangeOfYAxisHook();
   return (
     <>
       <a
@@ -16,7 +20,17 @@ const CallLinkComponent = () => {
           </div>
         </div>
 
-        <p className={`${isYAxisChange?"lg:text-shadow-none lg:text-gray-950":""} font-bold text-shadow shadow-gray-700 transition-all ease-in-out duration-700`}>{PHONENUMBER}</p>
+        <p
+          className={`${
+            isYAxisChange ||
+            currentPath ===
+              navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url
+              ? "lg:text-shadow-none lg:text-gray-950"
+              : ""
+          } font-bold text-shadow shadow-gray-700 transition-all ease-in-out duration-700`}
+        >
+          {PHONENUMBER}
+        </p>
       </a>
     </>
   );

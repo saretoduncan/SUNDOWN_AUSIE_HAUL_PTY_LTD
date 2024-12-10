@@ -48,15 +48,6 @@ const Footer = () => {
                     navigationData.get(ENavDataTitles.ABOUT_PAGE)!!.linkName
                   }
                   linkUrl={navigationData.get(ENavDataTitles.ABOUT_PAGE)!!.url}
-                />
-                <NavlinkComponent
-                  classes="px-0 text-sm md:text-base"
-                  linkName={
-                    navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.linkName
-                  }
-                  linkUrl={
-                    navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url
-                  }
                 />{" "}
                 <NavlinkComponent
                   classes="px-0 text-sm md:text-base"
@@ -67,13 +58,22 @@ const Footer = () => {
                     navigationData.get(ENavDataTitles.SERVICES_PAGE)!!.url
                   }
                 />
+                <NavlinkComponent
+                  classes="px-0 text-sm md:text-base"
+                  linkName={
+                    navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.linkName
+                  }
+                  linkUrl={
+                    navigationData.get(ENavDataTitles.CONTACTS_PAGE)!!.url
+                  }
+                />{" "}
               </div>
             </section>
             <section className="space-y-2 ">
               <h6 className="text-orange-500 font-bold capitalize">
                 Get in touch
               </h6>
-              <div className="grid gap-2">
+              <div className="grid gap-3">
                 <GetInTouchFooterComponents
                   customIcon={FaLocationDot}
                   textContent="47D Station Street Cannington WA, Perth, Australia, 6107"
