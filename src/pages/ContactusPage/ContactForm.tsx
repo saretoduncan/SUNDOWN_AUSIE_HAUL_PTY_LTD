@@ -1,3 +1,4 @@
+
 const ContactForm = () => {
   const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -55,7 +56,7 @@ const ContactForm = () => {
               Message
             </label>
             <textarea
-              name=""
+              name="message"
               id=""
               cols={20}
               rows={4}
