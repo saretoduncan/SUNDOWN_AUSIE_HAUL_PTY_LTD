@@ -1,7 +1,7 @@
 export type TNavLinkTypes = {
   linkName: string;
   url: string;
-  customClass?:string
+  customClass?: string;
 };
 export const ENavDataTitles = {
   HOME_PAGE: "homePage",
@@ -12,4 +12,13 @@ export const ENavDataTitles = {
 
 export type TWrapperType = {
   children: React.ReactNode;
+};
+
+export type TContactFormData = {
+  customer_name: string;
+  customer_email: string;
+  customer_address: string;
+  customer_phone_number: string;
+  message_subject: string;
+  message_content: string;
 };
