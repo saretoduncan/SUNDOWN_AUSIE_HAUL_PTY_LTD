@@ -11,6 +11,7 @@ const ApiContextWrapper: React.FC<TApiContextWrapper> = ({ children }) => {
 
   const postData = async (endpoint: string, payload: object): Promise<void> => {
     setLoading(true);
+    setData(null)
     setError(null);
     try {
       const response = await fetch(endpoint, {
@@ -27,9 +28,12 @@ const ApiContextWrapper: React.FC<TApiContextWrapper> = ({ children }) => {
       }
       const data = await response.json();
       setData(data.message);
+     
     } catch (err: any) {
       setError(err.toString());
+      
     }
+    setLoading(false);
   };
 
   return (

@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, createContext } from "react";
+import { Dispatch, SetStateAction, createContext, useContext } from "react";
 
 type TNavContextType = {
   isSideNavopen: boolean;
@@ -16,3 +16,10 @@ export const NavBarContext = createContext<TNavContextType | undefined>(
   undefined
 );
 export const ApiContext = createContext<TApiContextType | undefined>(undefined);
+export const useApiContext= ():TApiContextType =>{
+    const context = useContext(ApiContext);
+    if(!context){
+        throw new Error("useApIContext must be within ApiContextWrapper")
+    }
+    return context;
+}

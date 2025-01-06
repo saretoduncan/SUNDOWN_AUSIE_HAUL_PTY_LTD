@@ -14,11 +14,11 @@ export type TWrapperType = {
   children: React.ReactNode;
 };
 
-
 export type TContactFormData = {
-  full_name:string;
-  email:string;
-  address:string;
-  phone_number:string;
-  message:string
+  customer_name: string;
+  customer_email: string;
+  customer_address: string;
+  customer_phone_number: string;
+  message_subject: string;
+  message_content: string;
 };
