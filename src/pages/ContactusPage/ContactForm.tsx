@@ -18,7 +18,7 @@ const ContactForm = () => {
   });
   const onSubmit: SubmitHandler<TContactFormData> = async (data) => {
     
-    await postData("http://localhost:8083/api/send_mail", data);
+    await postData("/api/send_mail", data);
   };
 
   useEffect(()=>{
