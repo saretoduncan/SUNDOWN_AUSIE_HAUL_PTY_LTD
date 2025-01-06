@@ -13,12 +13,14 @@ const ContactForm = () => {
     register,
     formState: { errors },
     trigger,
+    reset
   } = useForm<TContactFormData>({
     mode:"onSubmit"
   });
   const onSubmit: SubmitHandler<TContactFormData> = async (data) => {
     
     await postData("/api/send_mail", data);
+    reset();
   };
 
   useEffect(()=>{

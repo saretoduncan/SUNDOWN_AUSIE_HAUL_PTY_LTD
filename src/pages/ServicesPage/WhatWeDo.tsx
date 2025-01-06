@@ -21,7 +21,7 @@ const WhatWeDo = () => {
                 <p className="text-center">
                   Explore our professional services at{" "}
                   <span className="font-bold text-orange-500">
-                    Sundown Ausie Haul
+                    Sundown Aussie Haul 
                   </span>
                 </p>
               </div>
@@ -64,7 +64,10 @@ const WhatWeDo = () => {
                 </div>
               </section>
               <section className="">
-                <ServiceImgCard cardImg={close_view_truck} animate={AnimateToRight} />
+                <ServiceImgCard
+                  cardImg={close_view_truck}
+                  animate={AnimateToRight}
+                />
               </section>
             </div>
             <div className="grid gap-6 md:grid-cols-2 ">
@@ -99,7 +102,10 @@ const WhatWeDo = () => {
                 </div>
               </section>
               <section>
-                <ServiceImgCard cardImg={landscape_view_truck} animate={AnimateToRight} />
+                <ServiceImgCard
+                  cardImg={landscape_view_truck}
+                  animate={AnimateToRight}
+                />
               </section>
             </div>
           </section>

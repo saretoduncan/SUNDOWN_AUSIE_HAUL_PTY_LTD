@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import AnimateToLeft from "../../AnimationWrappers/AnimateToLeft";
 import AnimateToRight from "../../AnimationWrappers/AnimateToRight";
 import ApiContextWrapper from "../../context/ApiContextWrapper";
@@ -8,6 +9,9 @@ import HeroSection from "./HeroSection";
 const ContactusPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Sundown Aussie Haul - Contact Us Page</title>
+      </Helmet>
       <ApiContextWrapper>
         <div className="grid gap-6 ">
           <section className="mt-[120px] lg:mt-[150px]">
