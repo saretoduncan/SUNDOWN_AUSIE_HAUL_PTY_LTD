@@ -24,7 +24,7 @@ const Footer = () => {
               </Link>
 
               <p className="text-sm font-bold lg:text-base">
-                <span className="text-orange-500  ">Sundown Haul Aussie</span>{" "}
+                <span className="text-orange-500  ">Sundown Aussie Haul</span>{" "}
                 provides reliable long, short, blue rock, and iron ore haulage
                 services, ensuring safe, timely deliveries with a skilled team
                 and well-maintained fleet.

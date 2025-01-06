@@ -55,7 +55,7 @@ function WhyChooseUs() {
                   <span>Experienced Drivers Committed to Excellence</span>
                 </h3>
                 <p className="text-sm">
-                  Our drivers are tranined to ensure safe deliveries.
+                  Our drivers are trained to ensure safe deliveries.
                 </p>
               </div>
             </AnimateToLeft>

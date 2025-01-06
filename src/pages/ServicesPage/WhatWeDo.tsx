@@ -1,12 +1,12 @@
 import ServiceImgCard from "../../components/ServiceImgCard";
 import truck_one from "../../assets/Truck_one.webp";
 import ServiceCardContent from "../../components/ServiceCardContent";
-import truck_two from "../../assets/trucks_two.webp";
+import close_view_truck from "../../assets/close_view_truck.webp";
 import truck_rear from "../../assets/rear_trucks_one.webp";
 import AnimateToTop from "../../AnimationWrappers/AnimateToTop";
 import AnimateToRight from "../../AnimationWrappers/AnimateToRight";
 import AnimateToLeft from "../../AnimationWrappers/AnimateToLeft";
-import truck_head from "../../assets/head_only_truck.webp";
+import landscape_view_truck from "../../assets/landscape_truck_img.webp";
 const WhatWeDo = () => {
   return (
     <>
@@ -64,7 +64,7 @@ const WhatWeDo = () => {
                 </div>
               </section>
               <section className="">
-                <ServiceImgCard cardImg={truck_two} animate={AnimateToRight} />
+                <ServiceImgCard cardImg={close_view_truck} animate={AnimateToRight} />
               </section>
             </div>
             <div className="grid gap-6 md:grid-cols-2 ">
@@ -99,7 +99,7 @@ const WhatWeDo = () => {
                 </div>
               </section>
               <section>
-                <ServiceImgCard cardImg={truck_head} animate={AnimateToRight} />
+                <ServiceImgCard cardImg={landscape_view_truck} animate={AnimateToRight} />
               </section>
             </div>
           </section>

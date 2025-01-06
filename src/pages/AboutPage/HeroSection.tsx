@@ -1,12 +1,12 @@
 import AnimateToTop from "../../AnimationWrappers/AnimateToTop";
-import truck_two from "../../assets/trucks_two.webp";
+import wide_view_truck from "../../assets/wide_view_truck.webp";
 
 const HeroSection = () => {
   return (
     <>
       <div
         className="h-[400px] lg:h-[500px] xl: w-full relative bg-no-repeat bg-cover bg-center"
-        style={{ backgroundImage: "url(" + "'" + truck_two + "'" + ")" }}
+        style={{ backgroundImage: "url(" + "'" + wide_view_truck + "'" + ")" }}
       >
         <div className="absolute top-0 bottom-0 w-full bg-gradient-to-r from-[#111111] to-[#f9731660]  text-gray-100 flex flex-col justify-center px-4 font-bold">
           <div className="xl:w-[1040px] xl:mx-auto 2xl:w-[1280px]">
@@ -18,7 +18,7 @@ const HeroSection = () => {
                   </h1>
                   <p className="text-sm text-white font-normal text-shadow-lg shadow-gray-950  lg:text-base">
                     Dedicated to building a more reliable transport sector,
-                    Sundown Ausie Haul strives for exceptional service,
+                    Sundown Aussie Haul strives for exceptional service,
                     transparency, and customer satisfaction in every haulage
                     operation.
                   </p>

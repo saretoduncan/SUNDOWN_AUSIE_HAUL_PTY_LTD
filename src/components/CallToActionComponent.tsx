@@ -24,7 +24,7 @@ const CallToActionComponent = () => {
                   {" "}
                   Reach out to us now to receive a personalized quote tailored
                   to your specific haulage requirements. Discover how Sundown
-                  Ausie Haul can make your transport need seamless and
+                  Aussie Haul can make your transport need seamless and
                   efficient.
                 </p>
                 <div className="grid md:block">

@@ -1,6 +1,6 @@
 import AnimateToLeft from "../../AnimationWrappers/AnimateToLeft";
 import AnimateToRight from "../../AnimationWrappers/AnimateToRight";
-import truck_head from "../../assets/head_only_truck.webp";
+import truck_head from "../../assets/about_us_img_with_logo.webp";
 import trapezium from "../../assets/trapezium.svg";
 const WhoAreWe = () => {
   return (
@@ -42,15 +42,15 @@ const WhoAreWe = () => {
 
                 <div>
                   <p>
-                    Sundown Ausie Haul is a trusted provider of premium haulage
+                    Sundown Aussie Haul is a trusted provider of premium haulage
                     services, backed by years of industry experience. Our
                     versatile fleet is equipped to handle a wide range of cargo,
                     ensuring safe, timely deliveries. We specialize in long
                     haulage, short haulage, blue rock haulage, and iron ore
                     haulage, offering tailored logistics solutions to meet your
                     unique needs. With a focus on efficiency, safety, and
-                    customer satisfaction, Sundown Haul is your reliable partner
-                    for seamless transportation services.
+                    customer satisfaction, Sundown Aussie Haul is your reliable
+                    partner for seamless transportation services.
                   </p>
                 </div>
               </div>
